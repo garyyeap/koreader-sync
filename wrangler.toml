@@ -1,0 +1,15 @@
+name = "koreader-sync"
+main = "src/index.ts"
+compatibility_date = "2025-09-01"
+
+# Placeholder database_id is required for Deploy to Cloudflare / local parse.
+# One-click deploy provisions a real D1 and rewrites this id.
+[[d1_databases]]
+binding = "DB"
+database_name = "koreader-sync"
+database_id = "f7c56083-8edb-4a34-8d2e-5803703d0221"
+migrations_dir = "migrations"
+
+[vars]
+# Set to "false" after you create your account(s).
+REGISTRATION_ENABLED = "true"
